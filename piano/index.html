@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- GOOGLE FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- BOXICON -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS & SCRIPT -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+
+    <title>PIANO</title>
+  </head>
+  <body class="flex-col ai-cnt jc-cnt">
+    <output class="flex d-none">
+      <div class="stick pos-abs"></div>
+      <i class="fa-solid fa-circle-xmark"></i>
+      <div class="close pos-abs">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h2>Unexpedted Key!</h2>
+    </output>
+    <div class="container flex-col">
+      <header>
+        <ul class="flex">
+          <li class="flex">
+            <h2>Playable PIANO</h2>
+          </li>
+          <li class="flex">
+            <span>Volume</span>
+            <input type="range" min="0" max="1" step="0.1" value="0.5" />
+          </li>
+          <li class="flex">
+            <label for="toggle">
+              <span>Show Keys</span>
+              <input type="checkbox" id="toggle" />
+              <div class="toggle pos-rel">
+                <div class="thumb pos-abs"></div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <ul class="keys grid">
+          <li class="pos-rel">
+            <div class="key kw" data-key="A">
+              <span class="hide">A</span>
+            </div>
+            <div class="key kb pos-abs" data-key="W">
+              <span class="hide">W</span>
+            </div>
+          </li>
+          <li class="pos-rel">
+            <div class="key kw" data-key="S">
+              <span class="hide">S</span>
+            </div>
+            <div class="key kb pos-abs" data-key="E">
+              <span class="hide">E</span>
+            </div>
+          </li>
+
+          <li class="pos-rel">
+            <div class="key kw" data-key="D">
+              <span class="hide">D</span>
+            </div>
+          </li>
+
+          <li class="pos-rel">
+            <div class="key kw" data-key="F">
+              <span class="hide">F</span>
+            </div>
+            <div class="key kb pos-abs" data-key="T">
+              <span class="hide">T</span>
+            </div>
+          </li>
+
+          <li class="pos-rel">
+            <div class="key kw" data-key="G">
+              <span class="hide">G</span>
+            </div>
+            <div class="key kb pos-abs" data-key="Y">
+              <span class="hide">Y</span>
+            </div>
+          </li>
+
+          <li class="pos-rel">
+            <div class="key kw" data-key="H">
+              <span class="hide">H</span>
+            </div>
+            <div class="key kb pos-abs" data-key="U">
+              <span class="hide">U</span>
+            </div>
+          </li>
+
+          <li class="pos-rel">
+            <div class="key kw" data-key="J">
+              <span class="hide">J</span>
+            </div>
+          </li>
+
+          <li class="pos-rel">
+            <div class="key kw" data-key="K">
+              <span class="hide">K</span>
+            </div>
+            <div class="key kb pos-abs" data-key="O">
+              <span class="hide">O</span>
+            </div>
+          </li>
+
+          <li class="pos-rel">
+            <div class="key kw" data-key="L">
+              <span class="hide">L</span>
+            </div>
+            <div class="key kb pos-abs" data-key="P">
+              <span class="hide">P</span>
+            </div>
+          </li>
+
+          <li class="pos-rel">
+            <div class="key kw" data-key=";">
+              <span class="hide">;</span>
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
